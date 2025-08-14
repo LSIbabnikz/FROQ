@@ -75,7 +75,7 @@ pip install -r requirements.txt
 
 The packages used by the repository are (if you wish to install them by hand):
 
-  - torch, torchvision, pillow, tqdm, scipy, numpy
+  - torch, torchvision, pillow, tqdm, scipy, numpy, einops, yaml
 
 
 The code was tested using:
@@ -92,6 +92,30 @@ The repository is segmented into two parts:
   - [**Observer - FROQ**](./observer/README.md): contains the code for the observer initialization and inference using the FROQ technique.
   
 Details of the two individual parts are presented in their respective README files.
+
+Before running the code you have to download the calibration dataset and setup the FR model (AdaFace):
+
+   - Calibration dataset:
+  
+     1.   Install Git LFS via: 
+            ``` 
+            sudo apt install git-lfs
+            git lfs install
+            ```
+     2.   Pull the ZIP file via:
+          ``` 
+          git lfs pull
+          ```  
+     4.   Unzip the file into the main folder of the repository. __The structure should be ./FROQ/calibration_dataset/id_XXXX/*.jpg__
+          ``` 
+          unzip calibration_dataset.zip -d calibration_dataset
+          ```   
+   
+   - FR model:
+
+      1. Obtain the pretrained weight from the official repository [[HERE](https://github.com/mk-minchul/AdaFace)].
+      2. Rename the checkpoint file **adaface_weight.ckpt**
+      3. Place the file in the *./face_recognition_model* folder
 
 If you wish to run the whole pipeline including the auxiliary FIQA technique, observer initialization and quality prediction, use the included shell script:
 
