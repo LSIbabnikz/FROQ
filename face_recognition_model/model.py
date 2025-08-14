@@ -417,7 +417,7 @@ def load_adaface():
 
     # load model and pretrained statedict
     model = build_model("ir_101")
-    statedict = torch.load('/media/sda/ziga-work/face_emb/adaface/weights.ckpt')['state_dict']
+    statedict = torch.load('./face_recognition_model/adaface_weights.ckpt')['state_dict']
     model_statedict = {key[6:]:val for key, val in statedict.items() if key.startswith('model.')}
     model.load_state_dict(model_statedict)
     model.eval()
