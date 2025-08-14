@@ -15,7 +15,7 @@ class DummyDataset(Dataset):
 
         self.items = []
         for (dir, subdirs, files) in os.walk(loc):
-            self.items.extend(list(map(lambda x: os.path.join(dir, x), files)))
+            self.items.extend(list(filter(lambda x: x.endswith("jpg"), map(lambda x: os.path.join(dir, x), files))))
         self.trans = trans
     
     def __getitem__(self, x):
