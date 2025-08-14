@@ -1,0 +1,10 @@
+
+dataset:
+  path: "./calibration_dataset"
+  batch_size: 8
+
+face_recognition_config: "./face_recognition_model/adaface_config.yaml"
+label_location: "./baselineFIQA/pseudo_quality_labels.pkl"
+outpath: "./observer/observer_data.pkl"
+
+    

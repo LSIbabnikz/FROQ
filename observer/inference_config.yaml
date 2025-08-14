@@ -1,0 +1,8 @@
+
+
+target_dataset: "/media/sda/ziga-work/datasets/xqlfw/arcface"
+batch_size: 64
+face_recognition_config: "./face_recognition_model/adaface_config.yaml"
+observer_data: "./observer/observer_data.pkl"
+outpath: "./observer/qualities.pkl"
+    

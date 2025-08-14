@@ -1,0 +1,19 @@
+
+
+module: face_recognition_model.model.load_adaface
+transformations:
+  trans_1:
+    module: "torchvision.transforms.v2.Resize"
+    params:
+      size: [112, 112]
+  trans_2:
+    module: "torchvision.transforms.v2.ToTensor"
+  trans_3:
+    module: "torchvision.transforms.v2.Normalize"
+    params: 
+      mean: [.5, .5, .5]
+      std: [.5, .5, .5]
+  trans_4:
+    module: "face_recognition_model.channel_swap.PermuteChannels"
+    params:
+      order: [2, 0, 1]
