@@ -63,7 +63,7 @@ This repository primarily uses **Conda** for environment management.
 
 ### Create the Conda environment from scratch
 ```bash
-conda create -n FROQ python=3.10
+conda create -n FROQ python==3.10
 conda activate FROQ
 ```
 
@@ -114,7 +114,7 @@ Before running the code you have to download the calibration dataset and setup t
    - FR model:
 
       1. Obtain the pretrained weight from the official repository [[HERE](https://github.com/mk-minchul/AdaFace)].
-      2. Rename the checkpoint file **adaface_weight.ckpt**
+      2. Rename the checkpoint file **adaface_weights.ckpt**
       3. Place the file in the *./face_recognition_model* folder
 
 If you wish to run the whole pipeline including the auxiliary FIQA technique, observer initialization and quality prediction, use the included shell script:
