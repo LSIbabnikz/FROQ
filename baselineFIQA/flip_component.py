@@ -53,7 +53,7 @@ def generate_flip_scores(
 
     flip_results = {}
     # Generate flip scores by comparing original to flipped images using cossim
-    with torch.no_grad(), torch.cuda.amp.autocast():
+    with torch.no_grad(), torch.autocast("cuda"):
 
         for (image_loc_batch, image_batch, flipped_image_batch) in tqdm(dataloader, desc="Generating Flip Scores: "):
             

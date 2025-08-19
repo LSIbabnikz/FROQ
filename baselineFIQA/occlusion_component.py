@@ -69,7 +69,7 @@ def generate_occlusion_scores(
 
     occlusion_results = {}
     # Generate results by comparing original to occluded images
-    with torch.no_grad(), torch.cuda.amp.autocast():
+    with torch.no_grad(), torch.autocast("cuda"):
 
         for (image_loc_batch, image_batch, image_batch_occluded) in tqdm(dataloader, "Generating Occlusion Scores: "):
 

@@ -62,7 +62,7 @@ def generate_noise_scores(
     noise_results = {}
     noise_masks = torch.randn((10, 3, 112, 112))
     # Generate results by comparing original to noisy images
-    with torch.no_grad(), torch.cuda.amp.autocast():
+    with torch.no_grad(), torch.autocast("cuda"):
 
         for (image_loc_batch, image_batch) in tqdm(dataloader, "Generating Noise Scores: "):
                 
