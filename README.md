@@ -133,7 +133,6 @@ If you find this repository useful, please cite the following paper:
  @inproceedings{babnikIJCB2025,
   title={{FROQ: Observing Face Recognition Models for Efficient Quality Assessment}},
   author={Babnik, {\v{Z}}iga and Jain, Deepak Kumar and Peer, Peter and {\v{S}}truc, Vitomir},
-  booktitle={Proceedings of the IEEE International Joint Conference on Biometrics (IJCB)},
   year={2025},
 }
 ```
