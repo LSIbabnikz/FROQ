@@ -1,6 +1,6 @@
 # __FROQ__: Observing Face Recognition Models for Efficient Quality Assessment (*Official Repository*)
 
-- Official repository of the paper "FROQ: Observing Face Recognition Models for Efficient Quality Assessment" in proceedings of the [IEEE International Joint Conference on Biometrics (IJCB) 2025](https://ijcb2025.ieee-biometrics.org/ "IJCB'25 Webpage").
+- Official repository of the paper "FROQ: Observing Face Recognition Models for Efficient Quality Assessment" accepted into the [IEEE International Joint Conference on Biometrics (IJCB) 2025](https://ijcb2025.ieee-biometrics.org/ "IJCB'25 Webpage").
 
 ## Table of Contents
 

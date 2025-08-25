@@ -24,7 +24,7 @@ It works by **finding the most informative intermediate layers** of a face recog
   - Saves the results to the configured `outpath`.
 
 - **`dataset.py`** – Contains two dataset wrappers:  
-  - `Glint360KSubset`: Recursively collects all image files under a directory and returns `(image_path, transformed_image)`【42†source】.  
+  - `Glint360KSubset`: Recursively collects all image files under a directory and returns `(image_path, transformed_image)`.  
   - `DummyDataset`: Same behavior, but used in inference for arbitrary datasets.
 
 - **`initialization_config.yaml`** – Example config for initialization.  
